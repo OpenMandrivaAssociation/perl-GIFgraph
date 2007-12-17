@@ -14,7 +14,6 @@ Source:	    http://search.cpan.org/CPAN/authors/id/M/MV/MVERB/%{module}-%{versio
 BuildRequires:	perl(GD::Graph)
 BuildRequires:	perl(Image::Magick)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 GIFgraph is a perl5 module to create and display GIF output for a graph.
