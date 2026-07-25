@@ -2,14 +2,14 @@
 %define upstream_version 1.20
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Graph Plotting Module (deprecated) 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MV/MVERB/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/GIFgraph
+Source0:	https://cpan.metacpan.org/authors/id/M/MV/MVERB/GIFgraph-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
