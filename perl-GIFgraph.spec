@@ -1,15 +1,13 @@
 %define upstream_name    GIFgraph
-%define upstream_version 1.20
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.20
+Release:	6
 
 Summary:	Graph Plotting Module (deprecated) 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        https://metacpan.org/dist/GIFgraph
-Source0:	https://cpan.metacpan.org/authors/id/M/MV/MVERB/GIFgraph-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MV/MVERB/GIFgraph-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ deprecated. It only exists for backward compatibility. The documentation for
 all the functionality can be found in GD::Graph
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor </dev/null
@@ -47,9 +45,7 @@ make test
 %changelog
 * Wed Aug 05 2009 Jérôme Quelin <jquelin@mandriva.org> 1.200.0-1mdv2010.0
 + Revision: 410069
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.20-3mdv2009.0
+- rebuild using %1.20 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.20-3mdv2009.0
 + Revision: 257105
 - rebuild
 
